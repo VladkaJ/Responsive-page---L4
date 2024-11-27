@@ -1,0 +1,86 @@
+/* mobile-first */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 8px;
+}
+nav {
+  background-color: #f08d8f;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+nav a {
+  color: rgb(245, 241, 241);
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+nav li {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 6px;
+  display: none;
+}
+/* stáhla jsem jinou ikonku na jiné stránce, na té vaší to po mně chtělo platební kartu a předplatné */
+.hamburger_icon {
+  width: 35px;
+  height: 26px;
+  padding: 5px;
+  margin-left: auto;
+}
+.image1_section {
+  height: 65vh;
+  background-image: url(./photo-1540503831458-3237544b2ce5.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.image1_text {
+  position: absolute;
+  bottom: 20px;
+  left: 8px;
+  color: rgb(245, 241, 241);
+}
+.image1_subtitle {
+  font-size: 16px;
+}
+.image1_title {
+  font-size: 20px;
+}
+.image2_container {
+  width: 100%;
+}
+.image2_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* zadání pro PC nad 768px */
+@media (min-width: 768px) {
+  nav li {
+    display: inline;
+    padding-top: 6px;
+  }
+  .hamburger_icon {
+    display: none;
+  }
+  .image2_container {
+    width: 50%;
+  }
+  .image1_subtitle {
+    font-size: 18px;
+  }
+  .image1_title {
+    font-size: 24px;
+  }
+}
